@@ -8,11 +8,12 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 void f_plus()
 {
-    int x, y;
+    float x, y;
     cout << "\nEnter your first number\n:";
     cin >> x;
     cout << "Enter your second number\n:";
@@ -22,7 +23,7 @@ void f_plus()
 
 void f_minus()
 {
-    int x, y;
+    float x, y;
     cout << "\nEnter your first number\n:";
     cin >> x;
     cout << "Enter your second number\n:";
@@ -31,7 +32,7 @@ void f_minus()
 }
 void f_mult()
 {
-    int x, y;
+    float x, y;
     cout << "\nEnter your first number\n:";
     cin >> x;
     cout << "Enter your second number\n:";
@@ -40,17 +41,33 @@ void f_mult()
 }
 void f_div()
 {
-    int x, y;
+    float x, y;
     cout << "\nEnter your first number\n:";
     cin >> x;
     cout << "Enter your second number\n:";
     cin >> y;
     cout << "Result is: " << x / y << endl;
 }
+void f_sqrt()
+{
+    float x;
+    cout << "\nEnter your number\n:";
+    cin >> x;
+    cout << "Result is: " << sqrt(x) << endl;
+}
+void f_pow()
+{
+    long double x, y;
+    cout << "\nEnter your number\n:";
+    cin >> x;
+    cout << "Enter your 'power' number\n:";
+    cin >> y;
+    cout << "Result is: " << pow(x, y) << endl;
+}
 
 void f_main()
 {
-    cout << "1.Plus function\n2.Minus function\n3.Multiplication function\n4.Division function\n:";
+    cout << "1.Plus function\n2.Minus function\n3.Multiplication function\n4.Division function\n5.Square function\n6.Power fuction\n:";
     int choise;
     cin >> choise;
     if(choise == 1)
@@ -68,6 +85,14 @@ void f_main()
     else if(choise == 4)
         {
             f_div();
+        }
+    else if(choise == 5)
+        {
+            f_sqrt();
+        }
+    else if(choise == 6)
+        {
+            f_pow();
         }
     else
         {
