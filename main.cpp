@@ -15,11 +15,11 @@ void f_mult();
 void f_div();
 void f_main();
 int f_choise();
+int f_choiseCalc();
 
 int main()
 {
     cout << "Welcome to my C++ calculator\nMade by Alex Podborny\n" << endl;
-    f_main();
-    f_choise();
+    f_choiseCalc();
     return 0;
 }
